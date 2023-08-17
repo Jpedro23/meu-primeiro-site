@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.base1{
+    background-color: antiquewhite;
+}
+.header{
+    border-bottom: 1px ridge black;
+}
+.body{
+    padding: 1px;
+}

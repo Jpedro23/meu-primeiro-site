@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.header{
-    border-bottom: 1px ridge black;
 }
-.conteiner{
-    padding: 1px;
+.title{
+    margin-top: 1rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
 }

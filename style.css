@@ -12,3 +12,9 @@
     flex-direction: column;
     margin-top: 1rem;
 }
+.link{
+    padding: 16px;
+    boder: nome;
+    boder-raduns: 1.5rem;
+    background-color: #fff;
+}

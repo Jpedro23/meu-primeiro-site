@@ -13,8 +13,9 @@
     margin-top: 1rem;
 }
 .link{
-    padding: 16px;
+    padding: 10px;
     boder: 1px #1c296b solid;
     boder-raduns: 1.5rem;
     background-color: #1c296b;
+    font-size-color: #fff;
 }

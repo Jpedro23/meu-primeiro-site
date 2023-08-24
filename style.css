@@ -14,7 +14,7 @@
 }
 .link{
     padding: 16px;
-    boder: nome;
+    boder: 1px #1c296b solid;
     boder-raduns: 1.5rem;
     background-color: #1c296b;
 }

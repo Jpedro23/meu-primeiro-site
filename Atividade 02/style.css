@@ -34,11 +34,6 @@ body p {
     height: 50%;
 }
 
-body h1:hover, p:hover {
-    background-color: var(---tercery);
-    border-radius: 1rem;
-}
-
 body h1 {
     color: white;
 }

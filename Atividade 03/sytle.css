@@ -1,0 +1,50 @@
+:root{
+    --primary:90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ header ------------------ */
+header{
+    width: 100%;
+    background-color: rgb(2,0,100);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+header h1{
+    font-size: 2rem;
+    color: white;
+}
+
+/* ------------------ header ------------------ */
+header{
+    width: 100%;
+    background-color: rgb(2,0,100);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+header h1{
+    font-size: 2rem;
+    color: white;
+}''
+
+header button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    bottom: 0;
+}

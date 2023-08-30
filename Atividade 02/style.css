@@ -1,6 +1,6 @@
 :root {
     --primary: rgb(2, 0, 100);
-    --segundary: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
+    --segundary: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
     ---tercery: rgb(1, 135, 144);
 }
 
@@ -22,7 +22,7 @@ header {
 /*------------------- body ----------------------*/
 
 body {
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100%;
@@ -45,19 +45,21 @@ body h1 {
     justify-content: center;
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     list-style: none;
 }
 
 .link a {
     color: white;
-
 }
 
 .link a:hover {
     background-color: #018790;
     border-radius: 10px 1px;
     padding: 5px;
+}
+
+.link ul{
+    margin-top: .35rem;
 }
 
 /*------------------- conteiner ----------------------*/
@@ -77,6 +79,6 @@ body h1 {
     gap: 1rem;
 }
 
-.container-img{
+.container-img {
     border-radius: 3rem;
 }

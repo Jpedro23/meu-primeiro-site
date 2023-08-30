@@ -35,7 +35,7 @@ header{
 header h1{
     font-size: 2rem;
     color: white;
-}''
+}
 
 header button{
     background-color: transparent;
@@ -47,4 +47,8 @@ header button{
     left: 1rem;
     top: 1.5rem;
     bottom: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

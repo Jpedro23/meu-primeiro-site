@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------- header -------------------------------- */
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(2, 0, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    bottom: 0;
+}
+
+/* ------------------------------- body -------------------------------- */
+
+body {
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    max-width: 1600px;
+    margin: auto;
+}
+
+h1,
+p {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.container p {
+    max-width: 50%;
+    text-align: justify;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .50rem;
+}
+
+
+/* ------------------------------- card -------------------------------- */
+.cards-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.card:hover{
+    box-shadow: 4px 4px 10px #121212 ;
+    border-radius: 1rem;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.card-image {
+    width: 100%;
+    padding: 1rem;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-link a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.card-link a:hover{
+    color: #8A2BE2;
+}

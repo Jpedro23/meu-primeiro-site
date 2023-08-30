@@ -48,3 +48,7 @@ header button{
     top: 1.5rem;
     bottom: 0;
 }
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

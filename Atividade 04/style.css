@@ -1,3 +1,11 @@
+:root {
+    --primary: #4722cc;
+    --segundary: #000000;
+    --terceary: #fff;
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -34,7 +42,7 @@ header button {
 }
 
 body {
-    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
+    background-image: linear-gradient(#1d0461, #351064, #280e4b, #1d0461);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -49,7 +57,7 @@ body {
 
 .content {
     width: 50%;
-    background-image: linear-gradient(#000000, #3a0896, #000000, #000000);
+    background-image: linear-gradient(#000000, #3a0896, #000000);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -60,47 +68,90 @@ body {
 
 .img-container {
     margin-top: .5rem;
-    border-radius: 1rem;
+    border-radius: 10rem;
+    border: .2rem var(--primary) dotted ;
 }
 
 .button {
     border-radius: .3rem;
-    background-color: #201058;
+    background-color: var(--primary);
     padding: .2rem 5rem .2rem 5rem;
-    color: #fff;
+    color: #000000;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 .questionario-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
 }
 
 .formulario-container {
     font-size: 1.5rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    text-align: center;
+}
+
+.button-container a:hover {
+    color: #fff;
+    border: .1rem var(--terceary) solid;
+}
+
+.cadastro-container {
+    display: flex;
+    align-items: end;
 }
 
 .input-container {
     display: flex;
-    border-radius: .5rem;
-    padding: .1rem 10rem 0 0rem;
-    text-align: center;
+    border-radius: 2rem;
+    padding: .5rem 12rem .5rem .6rem;
+    text-align: start;
+    border: .1rem #000000 solid;
+    background-color: #ffffff;
+}
+
+.dados-senhas a:hover {
+    color: var(--terceary);
 }
 
 .chekinbox-container {
     display: flex;
-    justify-content: space-between;
-    gap: .1rem;
+    gap: .3rem;
 }
 
 .dados-senhas {
     display: flex;
+    align-items: start;
+    display: flex;
     gap: 1.5rem;
+}
+
+.dados-senhas a:hover{
+    color:var(--primary);
 }
 
 .link-container {
     text-decoration: none;
+    color: #fff;
+}
+
+.link-container a:hover{
+    color: var(--primary);
+}
+
+
+.link-cadastro{
+    display: flex;
+    padding: 0 0 .3rem 0;
+}
+
+.link-cadastro a:hover{
+    color: var(--primary);
+
 }

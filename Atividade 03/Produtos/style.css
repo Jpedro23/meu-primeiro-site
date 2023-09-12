@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -39,7 +38,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,29 +46,37 @@ body {
     flex-direction: column;
 }
 
-
-th, td{
+th,
+td {
     border: .1rem solid #525151;
     border-radius: .5rem;
-    padding: .2rem;
-    background-color: #5b7dcf;
     color: #fff;
+    text-align: center;
+
 }
 
-.tables-atv4{
+.tables-atv4 {
     display: flex;
     gap: 1rem;
     margin-bottom: .5rem;
 }
 
-.table-04{
+.texto-ativiade {
+    width: 45%;
+    text-align: justify;
 
 }
-
-.table-05{
-    
-}
-
-.table-06{
-    
+.link_produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px #121212 solid;
+    margin: 0 6rem 0 6rem;
+    border-radius: .5rem;
+    background-color: #0032a7;
+    color: #fff;
+    gap: 1rem;
+    padding: .4rem;
+    text-decoration: none;
 }

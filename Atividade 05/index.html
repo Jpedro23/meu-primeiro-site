@@ -1,34 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 05</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgb(2, 0, 100);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        header button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            left: 1rem;
+            top: 1.5rem;
+            bottom: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0c2141;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 50%;
+            background-color: #3057ce;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .8rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            color: #bb1818;
+            border: .1rem #1100ff solid;
+            border-radius: 1rem;
+            padding: 1rem;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+            font-style: italic;
+            color: #fff;
+        }
+
+        .title-container {
+            border: none;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+
+        .paragrafo-unico {
+            color: #1100f2;
+            border: .1rem #ff1212 solid;
+        }
+
+        #meu-id {
+            color: #00ff22;
+            border: .1rem #000000 solid;
+        }
+
+        .link-navigator {
+            margin: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #4682B4;
+            border: .1rem #121212 solid;
+            border-radius: .5rem;
+            color: #ffffff;
+            padding: .5rem;
+        }
+        a:hover{
+            background-color: #1f5785;
+        }
+        
+    </style>
 </head>
+
+<header>
+    <h1>Web site - Programação web</h1>
+    <button onclick="history.back()">
+        <span class="material-symbols-outlined">
+            arrow_back
+        </span>
+    </button>
+</header>
+
 <body>
-    <div class="table-04">
-        <h1>aqui</h1>
-        <table border="1" cellpadding="20">
-            <tr>
-                <th>Codigo</th>
-                <th>Descrição</th>
-                <th>Preço (R$)</th>
-            </tr>
-            <tr>
-                <td>0001</td>
-                <td>Notebook</td>
-                <td>500,00 R$</td>
-            </tr>
-            <tr>
-                <td>0002</td>
-                <td>Monitor</td>
-                <td>500,00 R$</td>
-            </tr>
-            <tr>
-                <td colspan="2">Total</td>
-                <td>1000,00 R$</td>
-            </tr>
-        </table>
-    </div>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1 class="minha-classe">Atividade sobre CSS - Cascading style sheets</h1>
+                <h2> Objetivos - CSS Iline - CSS Icorporado - Seletores - Seletores de classes e Ids</h2>
+                <p class="title-container"> Apresentando as textos com o style na propria tag p </p>
+                <p style="color: #2f00ff; border: .1rem #ff1212 solid;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tempore nobis pariatur saepe error suscipit! Vel, alias quis qui ad quisquam
+                    porro, tenetur totam, provident at quasi laboriosam accusantium officiis perspiciatis recusandae!
+                    Labore voluptates mollitia odit vero quaerat sunt dignissimos aspernatur dolorem laboriosam expedita
+                    corrupti esse saepe perferendis, id quod.</p>
+                <p style="color: #bb1818; border: .1rem #1100ff solid;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tempore nobis pariatur saepe error suscipit! Vel, alias quis qui ad quisquam
+                    porro, tenetur totam, provident at quasi laboriosam accusantium officiis perspiciatis recusandae!
+                    Labore voluptates mollitia odit vero quaerat sunt dignissimos aspernatur dolorem laboriosam expedita
+                    corrupti esse saepe perferendis, id quod.</p>
+
+                <p style="color: #2fff00; border: .1rem #f700ff solid;">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Tempore nobis pariatur saepe error suscipit! Vel, alias quis qui ad quisquam
+                    porro, tenetur totam, provident at quasi laboriosam accusantium officiis perspiciatis recusandae!
+                    Labore voluptates mollitia odit vero quaerat sunt dignissimos aspernatur dolorem laboriosam expedita
+                    corrupti esse saepe perferendis, id quod.</p>
+
+                <p class="title-container"> Agora os texto com a sua estilização a tag style, refereciado pela sua tag
+                </p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet temporibus veritatis ratione nobis
+                    ea nostrum, velit labore accusamus cupiditate expedita porro amet deserunt error, aperiam eaque,
+                    voluptatem atque laboriosam ipsum qui quas numquam ducimus eligendi maiores. Numquam hic,
+                    repellendus odio earum ipsum voluptatem suscipit, saepe, velit quidem consectetur omnis itaque?
+                </p>
+                <p class="title-container"> Agora estilizando ainda pela tag style, porém referenciado pela class</p>
+                <p class="paragrafo-unico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ut dolorum
+                    nulla possimus error aspernatur quod totam placeat porro, inventore optio eveniet aut unde beatae
+                    quos in quisquam repudiandae ipsam eaque maiores ullam tempore ex. Eligendi, rem, maiores iure
+                    dignissimos corrupti in sint, vitae quae cum dolores error fugiat porro.</p>
+                <p class="title-container">Por fim a estilização pela tag style, utilizando o id</p>
+                <p id="meu-id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempore ad doloribus eveniet
+                    similique soluta esse, sit beatae autem officia ea exercitationem sunt impedit a tempora suscipit
+                    laborum nulla consequuntur animi recusandae temporibus, nostrum, possimus voluptate. Ullam, tenetur
+                    aut nam veniam cum, unde nesciunt animi voluptatum sit delectus amet tempora.</p>
+
+            </div>
+            <nav>
+                <div class="link-navigator">
+                    <a href="./atividade.html">Proximo exemplo</a>
+                </div>
+            </nav>
+        </div>
+    </main>
 </body>
+
 </html>

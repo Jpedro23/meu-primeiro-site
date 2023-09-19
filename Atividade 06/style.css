@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 a{
@@ -50,6 +50,11 @@ a{
     border: .1rem #ffffff solid;
     background-color: #ffffff;
     border-radius: .5rem;
-    padding: .1rem;
+    padding: .2rem;
     text-decoration: none;
+}
+
+a:hover{
+    background-color: #868585;
+    border: .1rem #868585 solid;
 }

@@ -1,0 +1,108 @@
+/* --------------- reset ------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- header ------------- */
+
+header {
+    width: 100%;
+    background-color: rgb(2, 0, 100);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    bottom: 0;
+}
+
+/* --------------- body ------------- */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
+}
+
+/* --------------- Div's ------------- */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fontes{
+    width: 50%;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    border: .1rem solid rgb(39, 39, 39);
+}
+
+.titulo h1, h2{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+/* --------------- formatação de fontes ------------- */
+
+
+.fontes p{
+    text-align: center;
+    color: #fff;
+    padding: 1em;
+
+}
+
+.fonte-family-1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5em;
+    font-style:italic;
+}
+
+.fonte-family-2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-style:oblique
+}
+
+.fonte-family-3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    font-style:normal
+}
+
+.fontes-explicacao{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5em;
+    font-style:italic;
+    border-bottom: .1rem solid rgb(255, 255, 255);
+}
+
+.fontes-explicacao:hover{
+    color: #3e87fd;
+}

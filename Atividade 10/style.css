@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------- header ------------- */
+
+header {
+    width: 100%;
+    background-color: rgb(2, 0, 100);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #afaeae;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    bottom: 0;
+}
+
+
+body{
+    background-color: #61bd8c;
+}
+
+#conteudo{
+    background-color: #fff;
+    padding: 10px;
+    width: 900px;
+    margin: 30px auto;
+}
+
+#fixed{
+    position: fixed;
+    left: 30px;
+}
+#relative{
+    position: relative;
+    left: 30px;
+}
+#absolute{
+    position: absolute;
+    left: 30px;
+}
+
+.caixa{
+    background-color: red;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

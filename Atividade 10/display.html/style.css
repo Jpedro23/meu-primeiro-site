@@ -72,8 +72,10 @@ h1{
 
 .link{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
+    gap: 1em;
 }
 
 .link a{

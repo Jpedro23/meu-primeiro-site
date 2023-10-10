@@ -23,60 +23,279 @@
 <body>
     <main>
         <div class="container">
-            <div class="primerio-display">
-                <p> Display: block <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam nobis
-                    aliquid incidunt voluptas expedita illum dolorem blanditiis labore perferendis? </p>
-                <div class="primerio-block">
-                    <p> Primeiro Display block </p>
-                    <div class="segundo-block">
-                        <p> Segundo Display block </p>
-                    </div>
-                    <div class="terceiro-block">
-                        <p> Terceiro Display block </p>
+            <div class="content">
+                <h1> Tipos de Display </h1>
+                <div class="display">
+                    <p class="title">Display: block <br> A declaração display: block faz com que o elemento HTML seja
+                        renderizado como
+                        bloco,
+                        tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima
+                        como
+                        embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao
+                        contrário
+                        (por exemplo, declarar a propriedade float para o elemento próximo ao bloco). Exemplo:</p>
+                    <div class="display-block-boder">
+                        <p> Display: block <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                            numquam
+                            nobis
+                            aliquid incidunt voluptas expedita illum dolorem blanditiis labore perferendis? </p>
+                        <div class="primerio-block">
+                            <p> Display block </p>
+                            <div class="display-block-green">
+                                <p> Display block </p>
+                            </div>
+                            <div class="display-block-violet">
+                                <p> Display block </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="segundo-display">
-                <p> Display: inline <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam
-                    nobis
-                    aliquid incidunt voluptas expedita illum dolorem blanditiis labore perferendis? </p>
-                <div class="primerio-bock">
-                    Primeiro Display block
-                    <div class="segundo-none">
-                        Segundo Display inline
-                    </div>
-                    <div class="terceiro-block">
-                        <p> Terceiro Display block </p>
+                <div class="display">
+                    <p class="title"> Display: inline <br> A propriedade display: inline faz com que o elemento HTML
+                        seja renderizado
+                        inline, dentro do bloco na mesma linha. Quando o elemento encontra-se entre dois blocos ele
+                        forma o chamado 'bloco anônimo' e é renderizado com a menor largura possível. Exemplo: </p>
+                    <div class="display-block-boder">
+                        Display block
+                        <div class="inline">
+                            Display inline
+                        </div>
+                        <div class="display-block-green">
+                            <p> Display block </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="terceiro-display">
-                <p> Display: inline <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate numquam
-                    nobis
-                    aliquid incidunt voluptas expedita illum dolorem blanditiis labore perferendis? </p>
-                <div class="primerio-none">
-                    Primeiro Display block
-                    <div class="segundo-none">
-                        Segundo Display inline
+                <div class="display">
+                    <p class="title"> Display: none <br>A declaração display: none faz com que o elemento HTML não seja renderizado
+                        (assim sendo você não o verá no exemplo a seguir, é o segundo bloco. Ver código fonte). Exemplo:
+                    </p>
+                    <div class="display-block-boder">
+                        Primeiro Display block
+                        <div class="none">
+                            Display inline
+                        </div>
+                        <div class="display-block-violet">
+                            <p> Display block </p>
+                        </div>
                     </div>
-                    <div class="terceiro-none">
-                        <p> Terceiro Display block </p>
+                </div>
+
+                <div class="display">
+                    <p class="title"> Display: inline-block <br> Nos Explorer 6 e 7 o valor inline-block funciona
+                        somente para os
+                        elementos HTML que por sejam display: inline.
+                        No navegador Mozilla você pode usar -moz-inline-box, mas cuidado que este valor não é o mesmo
+                        que inline-block, e poderá não funcionar como esperado em determinadas situações.
+                        Um bloco inline é colocado inline (ou seja, na mesma linha do conteúdo adjacente), mas
+                        comporta-se como se fosse um bloco. Exemplo:</p>
+                    <div class="display-block-boder">
+                        <p>Display: inline-block: block Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum,
+                            quidem!
+                        </p>
+                        <div class="inline-block">
+                            <p> Display: inline-block <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                Facilis, maiores!br Lorem
+                                ipsum
+                                dolor sit amet consectetur, adipisicing elit. Saepe, animi. <br>Lorem ipsum dolor sit
+                                amet
+                                consectetur adipisicing elit.
+                                adipisicing elit. Facere, quod!</p>
+                        </div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nihil.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit! Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Et, labore.
+                        <span class="inline-block-span">
+                            <p> Span- e não uma Div <br>Terceiro Display block: Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Vitae,
+                                vero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                                obcaecati!
+                            </p>
+                        </span>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, eius?
                     </div>
+                </div>
+
+                <div class="display">
+                    <p class="title"> Display: list-item <br> Não é suportada pelo Internet Explorer 5 Windows.
+                        A propriedade display: list-item faz com que o elemento HTML seja renderizado como um item de
+                        lista, isto significa que aparecerá um marcador (bullet) na frente de cada item (tal como
+                        acontece com o elemento UL), exceto para o Internet Explorer 5 para Mac que renderiza um número
+                        no lugar de um marcador (tal como acontece com o elemento OL). A numeração neste caso apresenta
+                        um bug: todos os itens de lista porventura existentes na página contam e em consequência a
+                        numeração inicia-se a partir daquela contagem. example: </p>
+                    <div class="display-block-boder">
+                        Display: list-item
+                        <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                            quidem!
+                        </p>
+                        <div class="list-item-green">
+                            Display list-item
+                        </div>
+                        <div class="list-item-violet">
+                            <p> Display list-item </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display">
+                    <p class="title"> Display: run-in <br> Suportada pelo Ópera 5+ e com restrições pelo Internet
+                        Explorer 5 para Mac.
+                        Suportada de forma incorreta pelo Safari 1.3.2: no segundo exemplo o box inline deve permanecer
+                        abaixo do box run-in.
+                        Definição de display: run-in segundo o W3C:
+                        "Se um box nível de bloco (que não seja flutuado ou absolutamente posicionado) segue-se a um box
+                        run-in este torna-se o primeiro box inline do box nível de bloco.
+                        Caso contrário, o box run-in é um box nível de bloco."
+                        Pergunta: Para que você precisa disto?
+                        De qualquer maneira, o navegador Ópera é o único que realmente suporta esta propriedade. Ela
+                        remove o padding-top e padding-bottom do box run-in embora isto não esteja previsto pelo W3C.
+                        Internet Explorer 5 para Mac indenta o box run-in. Eu não tenho a mínima idéia porque ele faz
+                        isto. Exemplo:
+                    </p>
+                    <div class="display-block-boder">
+                        Display: run-in
+                        <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                            quidem!
+                        </p>
+                        <div class="run-in">
+                            <p>Display run-in</p>
+                        </div>
+                        <div class="display-block-violet">
+                            <p> Display block </p>
+                        </div>
+                        <div class="run-in">
+                            <p> Display run-in</p>
+                        </div>
+                        <div class="inline">
+                            segundo-inline
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display">
+                    <p class="title"> Display: compact <br> Suportada pelo Ópera. Bug no Safari e iCab.
+                        Definição de display: compact segundo o W3C:
+                        "Se um box nível de bloco (que não seja flutuado ou absolutamente posicionado) segue-se a um box
+                        compact este será formatado como um one-line inline box. [...com suas peculiaridades de
+                        margens...]
+                        Caso contrário, o box compact é um box nível de bloco."
+                        O box compacto será posicionado à esquerda do bloco que lhe segue sempre que houver espaço
+                        suficiente para isto. No segundo exemplo da figura a seguir, para o terceiro bloco foi definida
+                        uma margen esquerda com tamanho suficiente para deixar espaço para o box compacto. Para o
+                        primeiro exemplo na mesma figura, não foi definida uma margem e em consequência não há espaço
+                        para o bloco compacto e assim ele foi renderizado como um bloco. Exemplo: </p>
+                    <div class="display-block-boder">
+                        Display: compact
+                        <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                            quidem!
+                        </p>
+                        <div class="compact">
+                            Display compact
+                        </div>
+                        <div class="display-block-violet">
+                            <p> Display block </p>
+                        </div>
+                        <div class="compact">
+                            <p>Display compact</p>
+                        </div>
+                        <div class="block-m-left">
+                            <p>segundo-block</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display">
+                    <p class="title"> Display: table <br> Não é suportada pelo Internet Explorer.
+                        O navegador Safari precisa de elementos com declaração display: table e display: table-row para
+                        mostrar as células corretamente.
+                        O navegador iCab não mostra o texto 'display: table-row'.
+                        A declaração display: table faz com que o elemento HTML seja renderizado como tabela. Elementos
+                        aninhados devem ser renderizados como table-row e table-cell, tal como nossas velhas conhecidas
+                        TR's e TD's. Existe também a declaração display: table-column que não tem qualquer influência na
+                        renderização servindo apenas como uma informação tal como o elemento COL. Eu não tenho certeza
+                        de como exatamente esta declaração funciona. Exemplo: <br>
+                        Neste exemplo as DIV's foram convenientemente aninhadas e declaradas com display: table,
+                        display: table-row e display: table-cell. </p>
+                    <div class="table-boder">
+                        Display: table
+                        <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                            quidem!
+                        </p>
+                        <div>
+                            <div class="text-table-cell">
+                                <p>display: table row</p>
+                            </div>
+                            <div class="table-cell">
+                                display: table-cell e mais conteúdo
+                            </div>
+                            <div class="table-cell">
+                                <p> display: table-cell</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-table-cell">
+                                <p>display: table row</p>
+                            </div>
+                            <div class="table-cell">
+                                <p>display: table-cell</p>
+                            </div>
+                            <div class="table-cell">
+                                <p>display: table-cell</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="display-block-boder">
+                        Display: block
+                        <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                            quidem!
+                        </p>
+                        <div>
+                            <div class="text-table-cell">
+                                <p>display: table row</p>
+                            </div>
+                            <div class="table-cell">
+                                display: table-cell e mais conteúdo
+                            </div>
+                            <div class="table-cell">
+                                <p> display: table-cell </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-table-cell">
+                                <p>display: table row</p>
+                            </div>
+                            <div class="table-cell">
+                                <p>display: table-cell</p>
+                            </div>
+                            <div class="table-cell">
+                                <p>display: table-cell</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-boder">
+                        <div>
+                            <p>Display: table</p>
+                            <p>Primeiro Display block Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+                                quidem!
+                            </p>
+                            <div class="table-cell">
+                                display: table-cell
+                            </div>
+                            <div class="table-cell">
+                                <p> display: table-cell </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link" title="Maujor o dinossouo do css">
+                    <a href="../atividade extra/index.html">Veja na integra</a>
                 </div>
             </div>
         </div>
-
-        <div>
-            <p> Display inline </p>
-            <p> Display none </p>
-            <p> Display inline-block </p>
-            <p> Display list-item </p>
-            <p> Display run-in </p>
-            <p> Display table </p>
-        </div>
-
     </main>
 </body>
 

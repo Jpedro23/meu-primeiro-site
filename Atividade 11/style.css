@@ -42,7 +42,8 @@ header button {
     box-sizing: border-box;
 }
 
-/* --------------- header ------------- */
+/* ------------- body e container ------------- */
+
 
 .header {
     width: 100%;
@@ -73,7 +74,7 @@ body {
 
 }
 
-/* ------------- body e container ------------- */
+/* --------------- nav list ------------- */
 
 .ul-list{
     display: flex;
@@ -99,7 +100,19 @@ body {
     background-color: #464545;
 }
 
-/* --------------- nav list ------------- */
+.ul-list li a:link{
+    color: #b9c941;
+}
+
+.ul-list li a:visited{
+    color:#458B00
+}
+
+.ul-list li a:active{
+    color: #FF1493;
+}
+
+/* --------------- container e cards ------------- */
 
 .content{
     width:50%;

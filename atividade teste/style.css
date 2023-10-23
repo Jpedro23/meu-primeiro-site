@@ -1,10 +1,8 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* --------------- header ------------- */
 
 .header {
     width: 100%;
@@ -48,67 +46,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 1rem;
-}
-
-.header-titulo{
-    text-align: center;
 }
 
 .content{
-    width:50%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-} 
-
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
 
 .card{
-    padding: 1rem;
     width: 100%;
-    border: .1rem solid rgb(0, 0, 0);
-    border-radius: .5rem;
-    background-color: #1d1d1d;
-    color: #fff;  
+    height: 50em;
+    background-color: black;
 }
 
-
-.card p{
-    margin: .5rem 0;
-    text-align: justify;
+.header1{
+    height: 30%;
+    background-color: aqua;
 }
 
-.img{
-    width: 50%;
-    float: right;
-    padding: .3rem 0 0 .6rem;
-    border-radius: 1rem;
+.section{
+    height: 60%;
+    background-color: blue;
 }
 
 .footer{
-    font-style: italic;
-    padding: 0 1rem 0 .5rem;
-    border-left: .5rem solid black;
-    font-size: .8rem;
-
-    
-}
-
-
-.header-card{
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.article-card{
-    height: 70%;
-
-}
-
-.footer-card{
     height: 10%;
+    background-color: brown;
 }

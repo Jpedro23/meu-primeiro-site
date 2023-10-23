@@ -25,6 +25,11 @@ body {
     color: #fff;
 }
 
+.header-titulo h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
 .header button {
     background-color: transparent;
     border: none;

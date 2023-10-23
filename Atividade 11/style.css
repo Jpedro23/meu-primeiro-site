@@ -143,13 +143,13 @@ body {
     width: 50%;
     float: right;
     padding: .3rem 0 0 .6rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 .footer{
     font-style: italic;
     padding: 0 1rem 0 .5rem;
-    border-left: .5rem solid black;
+    border-left: .5rem solid #000;
     font-size: .8rem;
 }
 

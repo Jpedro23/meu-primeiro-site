@@ -8,6 +8,17 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/logofivecon.png.png">
+
+    <script type="text/javascript">
+
+        function mostravalor(componente){
+            var altura = componente.getAttribute('data-altura');
+            var idade = componente.getAttribute('data-idade')
+            alert(altura + idade);
+        }
+    
+    </script>
+
 </head>
 
 <header class="header">
@@ -23,17 +34,11 @@
     <main>
         <div class="container">
             <div class="content">
-                <div class="card">
-                    <div class="header1">
-
-                    </div>
-                    <div class="section">
-
-                    </div>
-                    <div class="footer">
-
-                    </div>
-                </div>
+                <ul>
+                    <li class="pessoa" onclick="mostravalor(this)" data-idade="20" data-altura="1.8m ">João</li>
+                    <li class="pessoa" onclick="mostravalor(this)" data-idade="30" data-altura="1.5m ">Maria</li>
+                    <li class="pessoa" onclick="mostravalor(this)" data-idade="20" data-altura="1.7m ">José</li>
+                </ul>
             </div>
         </div>
     </main>

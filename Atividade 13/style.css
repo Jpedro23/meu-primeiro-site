@@ -77,3 +77,16 @@ body {
     height: 10%;
     background-color: brown;
 }
+
+
+.pessoa[data-idade='30']{
+    color: #FF4545;
+}
+
+.pessoa ::before{
+    content: 'antes';
+}
+
+.pessoa ::after{
+    content: 'depois';
+}

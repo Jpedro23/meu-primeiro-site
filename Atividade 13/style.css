@@ -1,8 +1,12 @@
+/*-------------- reset ----------------- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*-------------- header ----------------- */
 
 .header {
     width: 100%;
@@ -40,6 +44,8 @@ body {
     bottom: 0;
 }
 
+/*-------------- container e content ----------------- */
+
 .container{
     width: 100%;
     display: flex;
@@ -56,6 +62,8 @@ body {
     align-items: center;
     margin-top: 1rem;
 }
+
+/*-------------- card ----------------- */
 
 .card{
     width: 100%;
@@ -79,14 +87,16 @@ body {
 }
 
 
+/*-------------- data-* ----------------- */
+
 .pessoa[data-idade='30']{
     color: #FF4545;
 }
 
-.pessoa ::before{
-    content: 'antes';
+.pessoa{
+    color: #4567ff;
 }
 
-.pessoa ::after{
-    content: 'depois';
+.pessoa::after {
+    content: " Idade:" attr(data-idade) " CPF: " attr(data-altura);
 }

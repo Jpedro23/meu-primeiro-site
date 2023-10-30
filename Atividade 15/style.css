@@ -1,0 +1,128 @@
+/*-------------- reset ----------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------- header ----------------- */
+
+.header {
+    width: 100%;
+    background-color: rgb(2, 0, 100);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #afaeae;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.header-titulo h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.header button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+    bottom: 0;
+}
+
+/*-------------- container e content ----------------- */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 1rem;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 60, 61);
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.card_1 {
+    width: 85%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    border: .2rem dashed #ffffff;
+    align-items: center;
+    background-color: rgb(100, 65, 18);
+    border-radius: 0.5rem;
+    color: #fff;
+
+}
+
+.container_card_1 {
+    width: 50%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 65, 18);
+    border-radius: 0.5rem;
+    box-shadow: 0 15px 10px #777;   
+
+}
+
+.card_2 {
+    width: 85%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .2rem dashed #ffffff;
+    background-color: rgb(11, 104, 122);
+    border-radius: 0.5rem;
+    color: #fff;
+
+}
+
+.container_card_2 {
+    width: 50%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(11, 104, 122);
+    border-radius: 0.5rem;
+}
+
+
+.screen_1 {
+    width: 50%;
+    height: 75vh;
+    background: linear-gradient(to top right, #0075fc, rgb(182, 42, 238), rgb(182, 42, 238), rgb(28, 247, 57), rgb(28, 247, 57), rgb(247, 7, 7));
+}
+
+.screen_2 {
+    width: 50%;
+    height: 75vh;
+    background: radial-gradient(#fc3200, rgb(230, 105, 4), rgb(238, 235, 42), rgb(6, 236, 37));
+}

@@ -23,6 +23,7 @@ header h1 {
 body {
     background-image: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 0.6418942577030813) 75%, rgba(0, 4, 255, 0.664) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 .container {
@@ -48,6 +49,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    scroll-snap-align: start;
+    height: 70vh;
+}
+
+.links-container ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    scroll-snap-align: start;
+    height: 70vh;
 }
 
 .links-container p {

@@ -51,6 +51,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content {
@@ -60,69 +63,88 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(50, 60, 61);
+    background-color: rgb(255, 255, 255);
     padding: 1rem;
     gap: 1rem;
-
 }
 
-.card_1 {
-    width: 85%;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    border: .2rem dashed #ffffff;
-    align-items: center;
+.shadow-1 {
+    position: relative;
+}
+
+.shadow-1::before,
+.shadow-1::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 25px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 35px 20px #777;
+    -moz-box-shadow: 0 35px 20px #777;
+    box-shadow: 0 35px 30px -5px #020202;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+
+.shadow-1::after {
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    -o-transform: rotate(8deg);
+    -ms-transform: rotate(8deg);
+    transform: rotate(8deg);
+    right: 10px;
+    left: auto;
+}
+
+.shadow-2
+{
+  position: relative;
+}
+.shadow-2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 20px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 35px 30px -5px #020202;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.card {
+    width: 500px;
+    height: 350px;
     background-color: rgb(100, 65, 18);
     border-radius: 0.5rem;
-    color: #fff;
 
 }
 
-.container_card_1 {
-    width: 50%;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(100, 65, 18);
-    border-radius: 0.5rem;
-    box-shadow: 0 15px 10px #777;   
-
-}
-
-.card_2 {
-    width: 85%;
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: .2rem dashed #ffffff;
-    background-color: rgb(11, 104, 122);
-    border-radius: 0.5rem;
-    color: #fff;
-
-}
-
-.container_card_2 {
-    width: 50%;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(11, 104, 122);
-    border-radius: 0.5rem;
-}
 
 
-.screen_1 {
-    width: 50%;
-    height: 75vh;
+.linear {
+
     background: linear-gradient(to top right, #0075fc, rgb(182, 42, 238), rgb(182, 42, 238), rgb(28, 247, 57), rgb(28, 247, 57), rgb(247, 7, 7));
 }
 
-.screen_2 {
-    width: 50%;
-    height: 75vh;
+.radial {
+
     background: radial-gradient(#fc3200, rgb(230, 105, 4), rgb(238, 235, 42), rgb(6, 236, 37));
 }

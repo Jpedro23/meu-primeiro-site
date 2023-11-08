@@ -43,3 +43,51 @@ body {
     top: 1.5rem;
     bottom: 0;
 }
+/*-------------- container ----------------- */
+
+.container{
+    width: 100%;
+    border: solid black 1px;
+    position: relative;
+    height: 100px;
+    display: flex;
+}
+
+.box{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #255250;
+    /*border: solid 5px #000;
+    transition: border 3s 2s;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: minhaAnimação;
+    animation-iteration-count: infinite;*/
+    animation: minhaAnimação 5s .1s infinite alternate;
+}
+@keyframes minhaAnimação {
+
+    0%{
+        background-color: #fff;
+    }
+    25%{
+        background-color: #681e1e;
+    }
+    50%{
+        background-color: rgb(255, 255, 255)909;
+    }
+    75%{
+        background-color: #255250;
+    }
+    100%{
+        background-color: #681e1e;
+    }
+
+    from{ }
+    to {
+        transform: rotate(360deg);
+    }
+}

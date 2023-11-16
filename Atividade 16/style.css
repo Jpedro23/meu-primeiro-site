@@ -66,8 +66,17 @@ body {
     animation-delay: 1s;
     animation-name: minhaAnimação;
     animation-iteration-count: infinite;*/
-    animation: minhaAnimação 5s .1s infinite alternate;
+    animation: minhaAnimação 10s .1s infinite;
+   
 }
+
+.box:hover {
+    animation-name: minhaAnimação;
+    animation-duration: 10s;
+    animation-direction: reverse;
+}
+
+
 @keyframes minhaAnimação {
 
     0%{
@@ -88,6 +97,6 @@ body {
 
     from{ }
     to {
-        transform: rotate(360deg);
+        transform: rotate(1turn);
     }
 }

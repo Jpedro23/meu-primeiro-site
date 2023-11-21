@@ -70,24 +70,14 @@ body {
     padding: 0 1rem;
 }
 
-.bnt-primary{
-    border-radius: .5rem;
-    padding: .2rem;
-    margin: 1rem;
-    background-color: #3379b6;
-    color: #fff;
+.btn:not(:disabled){
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .2rem;
-}
-
-.bnt-primary:hover{
-    border: .1rem #fff solid;
+    gap: .5rem;
 }
 
 .buttons{
     display: flex;
+    gap: 1rem;
 }
 
 /*-------------- media query  ----------------- */

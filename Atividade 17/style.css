@@ -50,4 +50,55 @@ body {
 .container{
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.bnt-primary{
+    border-radius: .5rem;
+    padding: .2rem;
+    margin: 1rem;
+    background-color: #3379b6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.bnt-primary:hover{
+    border: .1rem #fff solid;
+}
+
+.buttons{
+    display: flex;
+}
+
+/*-------------- media query  ----------------- */
+
+@media (max-width:700px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
 }

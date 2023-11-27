@@ -78,6 +78,14 @@ button:not(:disabled) {
     margin: 1rem 0;
 }
 
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right:0;
+    padding-left: 0;
+    margin-top: var(--bs-gutter-y);
+}
 
 @media (max-width:600px){
     

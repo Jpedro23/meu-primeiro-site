@@ -45,15 +45,20 @@ body {
 }
 
 /*-------------- container ----------------- */
-.content{
+
+.container {
+    margin-bottom: 1rem;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:.5rem;
+    gap: .5rem;
     margin: .5rem;
 }
 
-.col-md-12{
+.col-md-12 {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -61,7 +66,8 @@ body {
     margin: .2rem;
 
 }
-.col-md-12 a{
+
+.col-md-12 a {
     text-decoration: none;
 }
 
@@ -72,21 +78,27 @@ button:not(:disabled) {
     gap: .5rem;
 }
 
-.grid{
+.grid {
     display: flex;
     border: 1px solid black;
     margin: 1rem 0;
+    gap: .5rem;
 }
 
 .row>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right:0;
+    padding-right: 0;
     padding-left: 0;
     margin-top: var(--bs-gutter-y);
 }
 
-@media (max-width:600px){
+.boder {
+    border: 1px solid #000;
+    padding: .5rem;
+}
+
+@media (max-width:600px) {
     
 }

@@ -45,22 +45,40 @@ body {
 }
 
 /*-------------- container ----------------- */
-
-.col-md-2{
-    border: 1px solid black;
-}
-
-.col-md-8{
-    border: 1px solid black;
-    text-align: center;
-}
-
-.col-md-6{
-    border: 1px solid black;
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:.5rem;
+    margin: .5rem;
 }
 
 .col-md-12{
-    border: 1px solid black;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    margin: .2rem;
 
+}
+.col-md-12 a{
+    text-decoration: none;
+}
+
+
+button:not(:disabled) {
+    cursor: pointer;
+    display: flex;
+    gap: .5rem;
+}
+
+.grid{
+    display: flex;
+    border: 1px solid black;
+    margin: 1rem;
+}
+
+
+@media (max-width:600px){
+    
 }

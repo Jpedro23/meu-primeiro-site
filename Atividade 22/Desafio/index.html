@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Atividade 19</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/logofivecon.png.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/logofivecon.png.png">
+</head>
+
+<header class="header">
+  <h1>Web site - Programação web</h1>
+  <button onclick="history.back()">
+    <span class="material-symbols-outlined">
+      arrow_back
+    </span>
+  </button>
+</header>
+
+
+<body class="bg-secondary">
+  <main class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light my-1 justify-content-center">
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-regular fa-clock"></i> Pedidos
+        Recentes</button>
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-regular fa-clipboard"></i> Enviar
+        Cliente</button>
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-regular fa-clipboard"></i> Receber
+        Pagamento</button>
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-regular fa-clipboard"></i> Todos os
+        pedidos</button>
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-regular fa-plus"></i> Novo Pedido</button>
+      <button type="button" class="btn btn-info text-white mx-1"><i class="fa-solid fa-house"></i> Página
+        principal</button>
+    </nav>
+    <div class="container-fluid bg-white">
+      <h4 class="py-2 text-muted">Pesquisa de Produtos</h4>
+      <h6 class="py-2 text-muted"><strong>Descrição</strong></h6>
+      <input type="text" class="">
+      <div class="my-3">
+        <button type="button" class="btn btn-info text-white mx-1"><i class="fa-solid fa-search"></i> Pesquisar</button>
+        <button type="button" class="btn btn-info text-white mx-1"><i class="fa-solid fa-refresh"></i>
+          Recarregar</button>
+        <button data-bs-toggle="modal" data-bs-target="#novo-item" type="button" class="btn btn-info text-white mx-1"><i
+            class="fa-solid fa-file"></i> Novo</button>
+        <div class="modal" id="novo-item">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="title-modal">Novo pedido</h4>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                </button>
+              </div>
+              <div class="modal-body mx-auto">
+                <div class="btn-group" role="group">
+                  <form class="mx-auto">
+                    <div class="form-group row my-2">
+                      <div class="col-sm-12">
+                        <input type="email" class="form-control" id="colFormLabel" placeholder="Ex.: João Pedro...">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">R$</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Quantia">
+                        <div class="input-group-append">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="form-group form-check">
+                      <select class="custom-select mr-sm-2 col-sm-12" id="inlineFormCustomSelect">
+                        <option selected>Categoria...</option>
+                        <option value="A">Alimentos</option>
+                        <option value="J">Jogos</option>
+                        <option value="V">Vestuário</option>
+                      </select>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-6 my-2">Status do produto</div>
+                      <div class="col-sm-6 my-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck1">
+                          <label class="form-check-label" for="gridCheck1">
+                            Ativo
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-sm btn-primary my-2">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" d-flex justify-content-between">
+        <div class="btn-group">
+          <button class="btn btn-light btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            10
+          </button>
+          <div class="dropdown-menu">
+          </div>
+          <span class="text-muted mx-2">Registro por página</span>
+        </div>
+        <div class="btn-group">
+          <span>Busca:</span>
+          <input type="text" class="mx-1">
+        </div>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Situação</th>
+          <th scope="col">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Pizza</td>
+          <td>
+            <span class="badge bg-success">Ativo</a>
+          </td>
+          <td>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Ver Detalhes"><i class="fa-regular fa-clipboard"></i></button>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Editar"><i class="fa-solid fa-edit"></i></button>
+            <button type="button" class="btn btn-light btn-sm text-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Remover"><i class="fa-solid fa-trash"></i></button>
+            <div class="modal" id="janela">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="title-modal">Deseja realmente remover esse registro?</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                    </button>
+                  </div>
+                  <div class="modal-body mx-auto">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-info text-white"><i class="fa-solid fa-check"></i>
+                        Sim</button>
+                      <button type="button" class="btn btn-light text-white"><i class="fa-solid fa-x"></i> Não</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Hamburgue</td>
+          <td><span class="badge bg-success">Ativo</a></td>
+          <td>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Ver Detalhes"><i class="fa-regular fa-clipboard"></i></button>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Editar"><i class="fa-solid fa-edit"></i></button>
+            <button type="button" class="btn btn-light btn-sm text-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Remover"><i class="fa-solid fa-trash"></i></button>
+            <div class="modal" id="janela">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="title-modal">Deseja realmente remover esse registro?</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                    </button>
+                  </div>
+                  <div class="modal-body mx-auto">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-info text-white"><i class="fa-solid fa-check"></i>
+                        Sim</button>
+                      <button type="button" class="btn btn-light text-white"><i class="fa-solid fa-x"></i> Não</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Salada</td>
+          <td><span class="badge bg-secondary">Inativo</a></td>
+          <td>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Ver Detalhes"><i class="fa-regular fa-clipboard"></i></button>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Editar"><i class="fa-solid fa-edit"></i></button>
+            <button type="button" class="btn btn-light btn-sm text-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Remover"><i class="fa-solid fa-trash"></i></button>
+            <div class="modal" id="janela">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="title-modal">Deseja realmente remover esse registro?</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                    </button>
+                  </div>
+                  <div class="modal-body mx-auto">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-info text-white"><i class="fa-solid fa-check"></i>
+                        Sim</button>
+                      <button type="button" class="btn btn-light text-white"><i class="fa-solid fa-x"></i> Não</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Salada</td>
+          <td><span class="badge bg-success">Ativo</a></td>
+          <td>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Ver Detalhes"><i class="fa-regular fa-clipboard"></i></button>
+            <button type="button" class="btn btn-light btn-sm" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Editar"><i class="fa-solid fa-edit"></i></button>
+            <button type="button" class="btn btn-light btn-sm text-info" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="Remover"><i class="fa-solid fa-trash"></i></button>
+            <div class="modal" id="janela">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="title-modal">Deseja realmente remover esse registro?</h4>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar">
+                    </button>
+                  </div>
+                  <div class="modal-body mx-auto">
+                    <div class="btn-group" role="group">
+                      <button type="button" class="btn btn-info text-white"><i class="fa-solid fa-check"></i>
+                        Sim</button>
+                      <button type="button" class="btn btn-light text-white"><i class="fa-solid fa-x"></i> Não</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

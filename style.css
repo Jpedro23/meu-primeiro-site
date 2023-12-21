@@ -33,6 +33,10 @@ body {
     justify-content: space-between;
 }
 
+.apresents-cotainer{
+    width: 50%;
+}
+
 /* ------------------ Titles ------------------ */
 
 .content {
@@ -49,8 +53,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    scroll-snap-align: start;
-    height: 70vh;
+}
+
+.menu-link{
+    display: flex;
+    width: 100%;
 }
 
 .links-container ul {
@@ -58,8 +65,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    scroll-snap-align: start;
-    height: 70vh;
+
 }
 
 .links-container p {
